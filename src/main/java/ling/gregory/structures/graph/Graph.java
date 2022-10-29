@@ -1,18 +1,16 @@
 package ling.gregory.structures.graph;
 
-import ling.gregory.structures.DeepCloneable;
+import ling.gregory.Util;
 import ling.gregory.structures.Structure;
 import ling.gregory.structures.graph.layout.GraphLayout;
 
-import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.*;
 import java.util.List;
 
-public class Graph<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> extends Structure {
-  private final GraphCanvas canvas = new GraphCanvas();
+public abstract class Graph<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> extends Structure {
   private final ArrayList<V> vertices = new ArrayList<>();
   private final ArrayList<E> edges = new ArrayList<>();
 
@@ -22,21 +20,9 @@ public class Graph<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> exten
     this.layout = layout;
   }
 
-  class GraphCanvas extends JPanel {
-    @Override
-    public void paintComponent(Graphics graphics) {
-      Graphics2D g = (Graphics2D) graphics;
-      g.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
-      g.setRenderingHint(RenderingHints.KEY_RESOLUTION_VARIANT, RenderingHints.VALUE_RESOLUTION_VARIANT_SIZE_FIT);
-      g.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
-      Insets insets = getInsets();
-      Rectangle bounds = g.getClipBounds();
-      bounds.x += insets.left;
-      bounds.y += insets.top;
-      bounds.width -= insets.left + insets.right;
-      bounds.height -= insets.top + insets.bottom;
-      if (layout != null) layout.drawGraph(g, bounds, Graph.this);
-    }
+  @Override
+  public void draw(Graphics2D g, Rectangle bounds) {
+    if (layout != null) layout.drawGraph(g, bounds, Graph.this);
   }
 
   public void resetColors(Color color) {
@@ -45,7 +31,7 @@ public class Graph<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> exten
   }
 
   public Graph(String title) {
-    setBorder(canvas, title);
+    super(title);
   }
 
   public void addVertex(V v) {
@@ -98,11 +84,32 @@ public class Graph<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> exten
     return Collections.unmodifiableList(edges);
   }
 
-  @Override
-  public JPanel getPanel() {
-    return canvas;
+  @SuppressWarnings("unchecked")
+  public Graph(Graph<V, E> g) {
+    super(g.getTitle());
+    layout = Util.copy(g.layout);
+    if (g.vertices.isEmpty()) return;
+
+    try {
+      IdentityHashMap<V, V> vertexMap = new IdentityHashMap<>();
+      for (int i = 0; i < g.vertices.size(); i++) {
+        V v = Util.copy(g.vertices.get(i));
+        addVertex(v);
+        vertexMap.put(g.vertices.get(i), v);
+      }
+
+      E e0 = g.edges.get(0);
+      Class<?> eClass = e0.getClass();
+      Class<?> vClass = e0.getFrom().getClass();
+      Constructor<?> eCtor = eClass.getConstructor(eClass, vClass, vClass);
+
+      for (int i = 0; i < g.edges.size(); i++) {
+        E e = g.edges.get(i);
+        addEdge((E) eCtor.newInstance(e, vertexMap.get(e.getFrom()), vertexMap.get(e.getTo())));
+      }
+
+    } catch (NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException ex) {
+      throw new RuntimeException(ex);
+    }
   }
-
-
-
 }

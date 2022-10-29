@@ -1,10 +1,10 @@
 package ling.gregory;
 
 public abstract class Algorithm {
-  protected Gui gui;
+  protected Visualizer.Manager manager;
 
-  public void setGui(Gui gui) {
-    this.gui = gui;
+  public void setManager(Visualizer.Manager manager) {
+    this.manager = manager;
   }
 
   public abstract void run() throws InterruptedException;

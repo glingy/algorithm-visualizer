@@ -1,9 +1,8 @@
 import ling.gregory.Algorithm;
-import ling.gregory.Gui;
+import ling.gregory.Visualizer;
 import ling.gregory.structures.graph.DefaultGraph;
 import ling.gregory.structures.graph.DefaultGraphEdge;
 import ling.gregory.structures.graph.DefaultGraphVertex;
-import ling.gregory.structures.graph.Graph;
 import ling.gregory.structures.graph.layout.GraphCircularLayout;
 import ling.gregory.structures.graph.layout.GraphRectangularLayout;
 
@@ -16,9 +15,9 @@ public class Example extends Algorithm {
   private final DefaultGraph graph3 = new DefaultGraph("Graph 3");
 
   public void setup() {
-    gui.add(graph1, 0, 0);
-    gui.add(graph2, 1, 0, 2, 2);
-    gui.add(graph3, 0, 1);
+    manager.add(graph1, 0, 0);
+    manager.add(graph2, 1, 0, 2, 2);
+    manager.add(graph3, 0, 1);
 
     graph1.setLayoutManager(new GraphRectangularLayout<>(3, 10));
     graph1.setVertices(DefaultGraphVertex.getSequence(DefaultGraphVertex.class, 10));
@@ -48,7 +47,7 @@ public class Example extends Algorithm {
     for (int i = 0; i < vertices.size(); i++) {
       graph2.getVertices().get(i).setColor(Color.red);
       graph2.getVertices().get(i).getEdges().forEach((e) -> e.setColor(Color.red));
-      gui.step();
+      manager.step();
       graph2.resetColors(Color.black);
     }
   }
@@ -57,7 +56,7 @@ public class Example extends Algorithm {
 
 
   public static void main(String[] args) {
-    Gui gui = new Gui(new Example());
-    gui.run();
+    Visualizer viz = new Visualizer(new Example());
+    viz.run();
   }
 }

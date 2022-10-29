@@ -12,6 +12,12 @@ public class GraphRectangularLayout<V extends GraphVertex<V, E>, E extends Graph
   private final int cols;
   private final int total;
 
+  public GraphRectangularLayout(GraphRectangularLayout<V, E> old) {
+    super(old);
+    cols = old.cols;
+    total = old.total;
+  }
+
   public GraphRectangularLayout(int cols, int total) {
     this.cols = cols;
     this.total = total;
@@ -33,12 +39,12 @@ public class GraphRectangularLayout<V extends GraphVertex<V, E>, E extends Graph
     List<V> vertices = graph.getVertices();
     for (int i = 0; i < vertices.size(); i++) {
       vertices.get(i).setPosition(new Point(p.x + ((i % cols) * VERTEX_SPACING), p.y + ((i / cols) * VERTEX_SPACING)));
-      vertices.get(i).draw(g);
+      vertices.get(i).draw(g, this);
     }
 
     List<E> edges = graph.getEdges();
     for (int i = 0; i < edges.size(); i++) {
-      edges.get(i).draw(g);
+      edges.get(i).draw(g, this);
     }
   }
 }

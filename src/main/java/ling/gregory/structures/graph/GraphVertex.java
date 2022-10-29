@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class GraphVertex<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> {
+public abstract class GraphVertex<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> {
   private ArrayList<E> edges = new ArrayList<>();
   private String name;
   private Color color = Color.black;
@@ -19,9 +19,16 @@ public class GraphVertex<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>>
     this.name = name;
   }
 
-  public void draw(Graphics2D g) {
+  GraphVertex(GraphVertex<V, E> v) {
+    name = v.name;
+    color = v.color;
+    edges = new ArrayList<>(v.edges.size());
+    position = null;
+  }
+
+  public void draw(Graphics2D g, GraphLayout<?,?> layout) {
     g.setColor(color);
-    g.drawOval(position.x - GraphLayout.VERTEX_RADIUS, position.y - GraphLayout.VERTEX_RADIUS, GraphLayout.VERTEX_RADIUS * 2, GraphLayout.VERTEX_RADIUS * 2);
+    g.drawOval(position.x - layout.VERTEX_RADIUS, position.y - layout.VERTEX_RADIUS, layout.VERTEX_RADIUS * 2, layout.VERTEX_RADIUS * 2);
     Rectangle2D nameBounds = g.getFontMetrics().getStringBounds(name, g);
     g.drawString(name, (int) (position.x - nameBounds.getCenterX() + 1), (int) (position.y - nameBounds.getCenterY() + 1));
   }

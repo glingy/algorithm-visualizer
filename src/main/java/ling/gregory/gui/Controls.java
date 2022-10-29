@@ -36,8 +36,11 @@ public class Controls {
     root.add(panel, c);
   }
 
-  public void setEnabled(boolean enabled) {
+  public void setNextEnabled(boolean enabled) {
     next.setEnabled(enabled);
+  }
+
+  public void setPreviousEnabled(boolean enabled) {
     previous.setEnabled(enabled);
   }
 

@@ -3,6 +3,7 @@ package ling.gregory.structures.graph;
 import ling.gregory.structures.graph.layout.GraphLayout;
 
 import java.awt.*;
+import java.util.IdentityHashMap;
 
 public class GraphEdge<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> {
   private final V from;
@@ -14,6 +15,12 @@ public class GraphEdge<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> {
     this.to = to;
   }
 
+  GraphEdge(GraphEdge<V, E> old, V from, V to) {
+    this.from = from;
+    this.to = to;
+    color = old.color;
+  }
+
   public V getFrom() {
     return from;
   }
@@ -22,16 +29,15 @@ public class GraphEdge<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> {
     return to;
   }
 
-  public void draw(Graphics2D g) {
+  public void draw(Graphics2D g, GraphLayout<?, ?> layout) {
     g.setColor(color);
     Point f = from.getPosition();
     Point t = to.getPosition();
-    double scalar = f.distance(t) / GraphLayout.VERTEX_RADIUS;
+    double scalar = f.distance(t) / layout.VERTEX_RADIUS;
     int fx = (int) (f.x + ((t.x - f.x) / scalar));
     int fy = (int) (f.y + ((t.y - f.y) / scalar));
     int tx = (int) (t.x + ((f.x - t.x) / scalar));
     int ty = (int) (t.y + ((f.y - t.y) / scalar));
-
 
     g.drawLine(fx, fy, tx, ty);
   }

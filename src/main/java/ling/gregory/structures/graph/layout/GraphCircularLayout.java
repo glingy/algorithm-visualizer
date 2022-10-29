@@ -10,6 +10,11 @@ import java.util.List;
 public class GraphCircularLayout<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> extends GraphLayout<V, E>{
   private final int total;
 
+  public GraphCircularLayout(GraphCircularLayout<V, E> old) {
+    super(old);
+    total = old.total;
+  }
+
   public GraphCircularLayout(int total) {
     this.total = total;
   }
@@ -32,12 +37,12 @@ public class GraphCircularLayout<V extends GraphVertex<V, E>, E extends GraphEdg
     java.util.List<V> vertices = graph.getVertices();
     for (int i = 0; i < vertices.size(); i++) {
       vertices.get(i).setPosition(new Point(x + (int) (Math.sin(angle * i) * radius), y + (int) (Math.cos(angle * i) * radius)));
-      vertices.get(i).draw(g);
+      vertices.get(i).draw(g, this);
     }
 
     List<E> edges = graph.getEdges();
     for (int i = 0; i < edges.size(); i++) {
-      edges.get(i).draw(g);
+      edges.get(i).draw(g, this);
     }
   }
 }
