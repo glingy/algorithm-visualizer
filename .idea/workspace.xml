@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="885843b2-da45-4239-9b35-90172c7e4046" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Gui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/Controls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/ControlsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/DeepCloneable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/Structure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphVertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphVertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphCircularLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphRectangularLayout.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GmqPsmosTpwBMGh2MWC5xm1OMK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ling.gregory.structures" />
+      <recent name="ling.gregory.structures.graph" />
+      <recent name="ling.gregory" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ling.gregory.structures.graph.layout" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Example">
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Example" />
+      <module name="AlgorithmVisualizer.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ling.gregory.Main" />
+      <module name="AlgorithmVisualizer.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Example" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="885843b2-da45-4239-9b35-90172c7e4046" name="Changes" comment="" />
+      <created>1667004086940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667004086940</updated>
+      <workItem from="1667004088467" duration="27670000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphEdge.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
