@@ -36,7 +36,6 @@ public class Visualizer implements ControlsListener {
       manager.step();
       algorithm.run();
       status = STATUS_DONE;
-      commit();
       updateEnabled();
     } catch (InterruptedException ignored) {}
   }

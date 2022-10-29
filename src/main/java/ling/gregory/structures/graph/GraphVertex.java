@@ -1,5 +1,6 @@
 package ling.gregory.structures.graph;
 
+import ling.gregory.Tuple;
 import ling.gregory.structures.graph.layout.GraphLayout;
 
 import java.awt.*;
@@ -81,5 +82,9 @@ public abstract class GraphVertex<V extends GraphVertex<V, E>, E extends GraphEd
 
   public void setPosition(Point position) {
     this.position = position;
+  }
+
+  public List<Tuple<V, E>> getNeighbors() {
+    return edges.stream().map((e) -> new Tuple<>(e.getTo() == this ? e.getFrom() : e.getTo(), e)).toList();
   }
 }

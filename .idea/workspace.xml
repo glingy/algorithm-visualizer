@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="885843b2-da45-4239-9b35-90172c7e4046" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Visualizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/LocatedStructure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/StructureRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BFSColoring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraphGenerators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Tuple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/Controls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/DeepCloneable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/Structure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/Structure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphVertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Visualizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphVertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphCircularLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphCircularLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphRectangularLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphRectangularLayout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +59,18 @@
       <recent name="ling.gregory" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="ling.gregory.structures.graph.layout" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Example">
+  <component name="RunManager" selected="Application.BFSColoring">
+    <configuration name="BFSColoring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BFSColoring" />
+      <module name="AlgorithmVisualizer.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Example" />
       <module name="AlgorithmVisualizer.main" />
@@ -93,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BFSColoring" />
         <item itemvalue="Application.Example" />
         <item itemvalue="Application.Main" />
       </list>
@@ -106,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667004086940</updated>
-      <workItem from="1667004088467" duration="34686000" />
+      <workItem from="1667004088467" duration="36380000" />
     </task>
     <servers />
   </component>
