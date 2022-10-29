@@ -1,8 +1,8 @@
-package ling.gregory.structures.graph;
+package visualizer.structures.graph;
 
-import ling.gregory.Util;
-import ling.gregory.structures.Structure;
-import ling.gregory.structures.graph.layout.GraphLayout;
+import visualizer.Util;
+import visualizer.structures.Structure;
+import visualizer.structures.graph.layout.GraphLayout;
 
 import java.awt.*;
 import java.lang.reflect.Constructor;

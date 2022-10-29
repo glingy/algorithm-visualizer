@@ -1,4 +1,4 @@
-package ling.gregory.structures;
+package visualizer.structures;
 
 import java.awt.*;
 

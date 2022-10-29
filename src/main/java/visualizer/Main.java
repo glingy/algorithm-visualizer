@@ -1,4 +1,4 @@
-package ling.gregory;
+package visualizer;
 
 import javax.swing.*;
 

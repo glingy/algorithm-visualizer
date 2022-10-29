@@ -1,10 +1,12 @@
-import ling.gregory.Algorithm;
-import ling.gregory.Tuple;
-import ling.gregory.Visualizer;
-import ling.gregory.structures.graph.DefaultGraph;
-import ling.gregory.structures.graph.DefaultGraphEdge;
-import ling.gregory.structures.graph.DefaultGraphVertex;
-import ling.gregory.structures.graph.layout.GraphCircularLayout;
+package algorithms;
+
+import visualizer.Algorithm;
+import visualizer.Tuple;
+import visualizer.Visualizer;
+import visualizer.structures.graph.DefaultGraph;
+import visualizer.structures.graph.DefaultGraphEdge;
+import visualizer.structures.graph.DefaultGraphVertex;
+import visualizer.structures.graph.layout.GraphCircularLayout;
 
 import java.awt.*;
 import java.util.LinkedList;

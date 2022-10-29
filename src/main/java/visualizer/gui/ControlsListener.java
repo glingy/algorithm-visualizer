@@ -1,4 +1,4 @@
-package ling.gregory.gui;
+package visualizer.gui;
 
 public interface ControlsListener {
   void next();

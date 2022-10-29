@@ -1,4 +1,4 @@
-package ling.gregory;
+package visualizer;
 
 public class Tuple<T, U> {
   public T first;

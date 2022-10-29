@@ -1,9 +1,8 @@
-package ling.gregory.structures.graph;
+package visualizer.structures.graph;
 
-import ling.gregory.structures.graph.layout.GraphLayout;
+import visualizer.structures.graph.layout.GraphLayout;
 
 import java.awt.*;
-import java.util.IdentityHashMap;
 
 public class GraphEdge<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> {
   private final V from;

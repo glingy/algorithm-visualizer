@@ -1,6 +1,4 @@
-package ling.gregory.structures.graph;
-
-import java.util.IdentityHashMap;
+package visualizer.structures.graph;
 
 public class DefaultGraphEdge extends GraphEdge<DefaultGraphVertex, DefaultGraphEdge> {
   public DefaultGraphEdge(DefaultGraphVertex from, DefaultGraphVertex to) {

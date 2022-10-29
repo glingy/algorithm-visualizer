@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'ling.gregory'
+group 'visualizer'
 version '1.0-SNAPSHOT'
 
 repositories {

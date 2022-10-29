@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="885843b2-da45-4239-9b35-90172c7e4046" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BFSColoring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraphGenerators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/Visualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BFSColoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/BFSColoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraphGenerators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/GraphGenerators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/Tuple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/Visualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/gui/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/gui/Controls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/ControlsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/gui/ControlsListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/LocatedStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/gui/LocatedStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/gui/StructureRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/gui/StructureRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/Structure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/Structure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/DefaultGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/DefaultGraphEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/DefaultGraphVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/DefaultGraphVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/GraphEdge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/GraphVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/GraphVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphCircularLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/layout/GraphCircularLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/layout/GraphLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/gregory/structures/graph/layout/GraphRectangularLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualizer/structures/graph/layout/GraphRectangularLayout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,14 +86,14 @@
   </component>
   <component name="RunManager" selected="Application.BFSColoring">
     <configuration name="BFSColoring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BFSColoring" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.BFSColoring" />
       <module name="AlgorithmVisualizer.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Example" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.Example" />
       <module name="AlgorithmVisualizer.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667004086940</updated>
-      <workItem from="1667004088467" duration="36380000" />
+      <workItem from="1667004088467" duration="36796000" />
     </task>
     <servers />
   </component>

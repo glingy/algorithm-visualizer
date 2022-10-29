@@ -1,4 +1,4 @@
-package ling.gregory;
+package visualizer;
 
 public abstract class Algorithm {
   protected Visualizer.Manager manager;

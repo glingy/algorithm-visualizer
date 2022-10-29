@@ -1,10 +1,8 @@
-package ling.gregory.gui;
+package visualizer.gui;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
-import static javax.swing.BorderFactory.*;
 
 public class Controls {
   private final JPanel root = new JPanel();

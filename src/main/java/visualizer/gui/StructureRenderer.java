@@ -1,6 +1,6 @@
-package ling.gregory.gui;
+package visualizer.gui;
 
-import ling.gregory.structures.Structure;
+import visualizer.structures.Structure;
 
 import javax.swing.*;
 import java.awt.*;

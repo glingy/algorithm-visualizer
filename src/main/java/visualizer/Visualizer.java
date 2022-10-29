@@ -1,9 +1,8 @@
-package ling.gregory;
+package visualizer;
 
-import ling.gregory.gui.ControlsListener;
-import ling.gregory.gui.LocatedStructure;
-import ling.gregory.gui.StructureRenderer;
-import ling.gregory.structures.Structure;
+import visualizer.gui.ControlsListener;
+import visualizer.gui.LocatedStructure;
+import visualizer.structures.Structure;
 
 import java.awt.*;
 import java.util.ArrayList;

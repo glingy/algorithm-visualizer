@@ -1,4 +1,4 @@
-package ling.gregory.structures.graph;
+package visualizer.structures.graph;
 
 public class DefaultGraphVertex extends GraphVertex<DefaultGraphVertex, DefaultGraphEdge> {
   public DefaultGraphVertex(String name) {

@@ -1,7 +1,9 @@
-import ling.gregory.structures.graph.DefaultGraph;
-import ling.gregory.structures.graph.DefaultGraphEdge;
-import ling.gregory.structures.graph.DefaultGraphVertex;
-import ling.gregory.structures.graph.GraphVertex;
+package algorithms;
+
+import visualizer.structures.graph.DefaultGraph;
+import visualizer.structures.graph.DefaultGraphEdge;
+import visualizer.structures.graph.DefaultGraphVertex;
+import visualizer.structures.graph.GraphVertex;
 
 import java.util.List;
 import java.util.Random;

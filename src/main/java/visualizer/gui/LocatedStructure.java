@@ -1,9 +1,8 @@
-package ling.gregory.gui;
+package visualizer.gui;
 
-import ling.gregory.Util;
-import ling.gregory.structures.Structure;
+import visualizer.Util;
+import visualizer.structures.Structure;
 
-import javax.swing.*;
 import java.awt.*;
 
 public class LocatedStructure {

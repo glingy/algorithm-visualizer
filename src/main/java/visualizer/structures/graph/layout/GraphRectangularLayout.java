@@ -1,11 +1,10 @@
-package ling.gregory.structures.graph.layout;
+package visualizer.structures.graph.layout;
 
-import ling.gregory.structures.graph.Graph;
-import ling.gregory.structures.graph.GraphEdge;
-import ling.gregory.structures.graph.GraphVertex;
+import visualizer.structures.graph.Graph;
+import visualizer.structures.graph.GraphEdge;
+import visualizer.structures.graph.GraphVertex;
 
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
 import java.util.List;
 
 public class GraphRectangularLayout<V extends GraphVertex<V, E>, E extends GraphEdge<V, E>> extends GraphLayout<V, E>{
